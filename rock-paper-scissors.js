@@ -65,6 +65,17 @@ document.querySelector('.js-auto-play').addEventListener(
     }
 );
 
+document.body.addEventListener('keydown', (event) => {
+    if(event.key == 'r'){
+        playGame('Rock');
+    }
+    else if(event.key == 'p'){
+        playGame('Paper');
+    }
+    else if(event.key == 's'){
+        playGame('Scissor')
+    }
+});
 function playGame(playerMove){
     const computerMove = getComputerMove();
     let result ='';

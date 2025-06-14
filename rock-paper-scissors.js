@@ -33,6 +33,38 @@ function autoPlay(){
     }
 }
 
+document.querySelector('.js-rock-button').addEventListener(
+    'click', () => {
+        playGame('Rock');
+    }
+);
+
+document.querySelector('.js-paper-button').addEventListener(
+    'click', () => {
+        playGame('Paper');
+    }
+);
+
+document.querySelector('.js-scissor-button').addEventListener(
+    'click', () => {
+        playGame('Scissor');
+    }
+);
+
+document.querySelector('.js-reset').addEventListener(
+    'click', () => {
+        score.win = 0;
+        score.losses = 0;
+        score.tie = 0;
+    }
+);
+
+document.querySelector('.js-auto-play').addEventListener(
+    'click', () => {
+        autoPlay();
+    }
+);
+
 function playGame(playerMove){
     const computerMove = getComputerMove();
     let result ='';

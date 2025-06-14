@@ -9,17 +9,17 @@
         <p class="game-heading">
             Rock Paper Scissor
         </p>
-        <button class="button-img" onclick="playGame('Rock');">
+        <button class="button-img js-rock-button" >
 
             <img src="rock-emoji.png" alt="Rock" class="Img">
 
         </button>
-         <button class="button-img" onclick="playGame('Paper');">
+         <button class="button-img js-paper-button" >
 
             <img src="paper-emoji.png" alt="Paper" class="Img">
 
         </button>
-        <button class="button-img" onclick="playGame('Scissor');">
+        <button class="button-img js-scissor-button" >
 
             <img src="scissor-emoji.png" alt="Scissor" class="Img">
 
@@ -27,13 +27,10 @@
         <p class="js-result result"></p>
         <p class="js-move move"></p>
         <p class="js-score"></p>
-        <button class="js-reset reset" onclick="
-        score.win = 0;
-        score.losses = 0;
-        score.tie = 0;">
+        <button class="js-reset reset" >
             Reset Score
         </button>
-        <button class="auto-play-button" onclick="autoPlay();">Auto Play</button>
+        <button class="auto-play-button js-auto-play ">Auto Play</button>
 
 
         <script src="rock-paper-scissors.js">
